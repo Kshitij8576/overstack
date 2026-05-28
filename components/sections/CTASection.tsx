@@ -5,7 +5,7 @@ import GlowButton from '@/components/ui/GlowButton'
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-white pb-14">
       {/* GLOW */}
 
       <div

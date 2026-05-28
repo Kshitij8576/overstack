@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-black pt-32 pb-14">
+    <footer className="relative overflow-hidden bg-black pt-14 pb-14">
       {/* MASSIVE GLOW */}
 
       <div
