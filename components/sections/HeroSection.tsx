@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import GlowButton from '@/components/ui/GlowButton'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -45,7 +46,7 @@ export default function HeroSection() {
           mx-auto
           px-6
           pt-40
-          pb-28
+          pb-16
         "
       >
         <div
@@ -161,50 +162,55 @@ export default function HeroSection() {
             {/* BUTTONS */}
 
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                delay: 0.3,
-                duration: 0.6,
-              }}
-              className="
-                mt-10
-                flex
-                flex-wrap
-                gap-4
-              "
-            >
-              <GlowButton>
-                Start Learning
-              </GlowButton>
+  initial={{
+    opacity: 0,
+    y: 20,
+  }}
+  animate={{
+    opacity: 1,
+    y: 0,
+  }}
+  transition={{
+    delay: 0.3,
+    duration: 0.6,
+  }}
+  className="
+    mt-10
+    flex
+    flex-wrap
+    gap-4
+  "
+>
+  <Link href="/courses">
+    <GlowButton>
+      Start Learning
+    </GlowButton>
+  </Link>
 
-              <button
-                className="
-                  px-7
-                  py-4
-                  rounded-2xl
-                  border
-                  border-neutral-200
-                  bg-white/70
-                  backdrop-blur-xl
-                  text-lg
-                  font-semibold
-                  text-neutral-800
-                  hover:border-orange-300
-                  hover:bg-orange-50
-                  transition-all
-                "
-              >
-                Explore Courses
-              </button>
-            </motion.div>
-
+  <Link
+    href="/courses/#courses"
+    className="
+      px-7
+      py-4
+      rounded-2xl
+      border
+      border-neutral-200
+      bg-white/70
+      backdrop-blur-xl
+      text-lg
+      font-semibold
+      text-neutral-800
+      hover:border-orange-300
+      hover:bg-orange-50
+      transition-all
+      inline-flex
+      items-center
+      justify-center
+    "
+  >
+    Explore Courses
+  </Link>
+</motion.div>
 
             
           </div>

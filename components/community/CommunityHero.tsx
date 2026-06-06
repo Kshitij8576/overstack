@@ -19,6 +19,16 @@ export default function CommunityHero() {
         "
       />
 
+      <div
+        className="
+          absolute
+          inset-0
+          opacity-[0.03]
+          bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
+          bg-[size:72px_72px]
+        "
+      />
+
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +80,7 @@ export default function CommunityHero() {
           </p>
 
           <a
-            href="YOUR_WHATSAPP_LINK"
+            href="https://chat.whatsapp.com/BqtMm0QjeSdF3yyeWqKKJD"
             target="_blank"
             rel="noopener noreferrer"
             className="

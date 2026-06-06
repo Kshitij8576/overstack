@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function AboutHero() {
   return (
-    <section className="relative overflow-hidden pt-40 pb-32">
+    <section className="relative overflow-hidden pt-40 pb-16">
       {/* Glow */}
 
       <div
@@ -18,6 +18,16 @@ export default function AboutHero() {
           bg-orange-100
           blur-3xl
           opacity-40
+        "
+      />
+
+      <div
+        className="
+          absolute
+          inset-0
+          opacity-[0.03]
+          bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
+          bg-[size:72px_72px]
         "
       />
 

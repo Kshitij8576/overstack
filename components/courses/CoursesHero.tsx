@@ -25,6 +25,16 @@ export default function CoursesHero() {
         "
       />
 
+      <div
+        className="
+          absolute
+          inset-0
+          opacity-[0.03]
+          bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
+          bg-[size:72px_72px]
+        "
+      />
+
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1fr_420px] gap-20 items-center">
           <motion.div

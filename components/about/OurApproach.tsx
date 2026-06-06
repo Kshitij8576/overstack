@@ -34,7 +34,7 @@ const pillars = [
 
 export default function OurApproach() {
   return (
-    <section className="relative overflow-hidden bg-white py-32">
+    <section className="relative overflow-hidden bg-white py-16">
       {/* Glow */}
 
       <div

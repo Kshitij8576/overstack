@@ -4,22 +4,34 @@ import { motion } from 'framer-motion'
 
 export default function FounderNote() {
   return (
-    <section className="relative bg-white py-32 overflow-hidden">
+    <section className="relative bg-black py-16 overflow-hidden">
       {/* Glow */}
 
-      <div
-        className="
-          absolute
-          right-[-200px]
-          top-0
-          w-[500px]
-          h-[500px]
-          rounded-full
-          bg-orange-100
-          blur-3xl
-          opacity-30
-        "
-      />
+     <div
+  className="
+    absolute
+    left-1/2
+    top-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+    w-[700px]
+    h-[700px]
+    rounded-full
+    bg-orange-500
+    blur-3xl
+    opacity-10
+  "
+/>
+
+<div
+  className="
+    absolute
+    inset-0
+    opacity-[0.03]
+    bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)]
+    bg-[size:80px_80px]
+  "
+/>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
@@ -44,19 +56,22 @@ export default function FounderNote() {
           {/* Heading */}
 
           <h2
-            className="
-              mt-6
-              text-[42px]
-              md:text-[64px]
-              font-black
-              tracking-[-0.05em]
-              leading-[1]
-            "
-          >
-            Technology moves fast.
-            <br />
+  className="
+    mt-6
+    text-[42px]
+    md:text-[64px]
+    font-black
+    tracking-[-0.05em]
+    leading-[1]
+    text-white
+  "
+>
+           Technology moves fast.
+<br />
 
-            Education should too.
+<span className="text-orange-400">
+  Education should too.
+</span>
           </h2>
 
           {/* Content */}
@@ -69,7 +84,7 @@ export default function FounderNote() {
               space-y-6
               text-lg
               leading-relaxed
-              text-neutral-600
+              text-neutral-400
             "
           >
             <p>
@@ -90,15 +105,21 @@ export default function FounderNote() {
           {/* Quote */}
 
           <div
-            className="
-              mt-12
-              text-orange-500
-              font-semibold
-              text-xl
-            "
-          >
-            Education should evolve as fast as technology.
-          </div>
+  className="
+    mt-14
+    inline-flex
+    rounded-full
+    border
+    border-orange-500/20
+    bg-orange-500/10
+    px-6
+    py-3
+    text-orange-400
+    font-medium
+  "
+>
+  Education should evolve as fast as technology.
+</div>
         </motion.div>
       </div>
     </section>

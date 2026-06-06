@@ -12,6 +12,7 @@ import CoursesSection from '@/components/sections/CoursesSection'
 import LiveLearningSection from '@/components/sections/LiveLearningSection'
 import ExperienceSection from '@/components/sections/ExperienceSection'
 import TransformationSection from '@/components/sections/TransformationSection'
+import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import CTASection from '@/components/sections/CTASection'
 
 export default function HomePage() {
@@ -34,6 +35,8 @@ export default function HomePage() {
       <ExperienceSection />
 
       <TransformationSection />
+
+      <TestimonialsSection />
 
       <CTASection />
 

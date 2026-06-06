@@ -122,7 +122,7 @@ export default function CommunityCTA() {
           {/* CTA */}
 
           <a
-            href="YOUR_WHATSAPP_COMMUNITY_LINK"
+            href="https://chat.whatsapp.com/BqtMm0QjeSdF3yyeWqKKJD"
             target="_blank"
             rel="noopener noreferrer"
             className="

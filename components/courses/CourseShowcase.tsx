@@ -11,7 +11,7 @@ const courses = [
       'From your first HTML tag to building production-ready applications with modern AI-powered development workflows.',
 
     applyLink:
-      'YOUR_GOOGLE_FORM_LINK',
+      'https://docs.google.com/forms/d/e/1FAIpQLSd0joqZj3ib-OI94Zwqlvn4K84F7bPP9r9V5gKENdfOTAL-gw/viewform?usp=dialog',
 
     stack: [
       'HTML',
@@ -32,7 +32,7 @@ const courses = [
       'Understand how modern systems operate, how attacks happen, and how professionals secure digital infrastructure.',
 
     applyLink:
-      'YOUR_GOOGLE_FORM_LINK',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfmExzV4xjIUNbPx67KqrL3shSNOZ3wVkuIYfZUKSMPqfuwSg/viewform?usp=dialog',
 
     stack: [
       'Networking',
@@ -53,7 +53,7 @@ const courses = [
       'Turn raw information into meaningful business insights using modern analytics and AI-assisted workflows.',
 
     applyLink:
-      'YOUR_GOOGLE_FORM_LINK',
+      'https://docs.google.com/forms/d/e/1FAIpQLSdg6Z1O8JIrP0X1ezYFIvfG64Yq_6vlbzwTJxTLMLwJ3vvNPg/viewform?usp=dialog',
 
     stack: [
       'Excel',
@@ -70,7 +70,7 @@ const courses = [
 
 export default function CourseShowcase() {
   return (
-    <section className="relative bg-white py-16 overflow-hidden">
+    <section id="courses" className="relative bg-white py-16 overflow-hidden">
       {/* Glow */}
 
       <div
@@ -273,17 +273,137 @@ export default function CourseShowcase() {
 
                 {/* Bottom */}
 
-                <div
-                  className="
-                    mt-12
-                    flex
-                    flex-col
-                    md:flex-row
-                    md:items-center
-                    md:justify-between
-                    gap-6
-                  "
-                >
+               {/* Program Highlights */}
+
+<div
+  className="
+    mt-10
+    grid
+    sm:grid-cols-2
+    lg:grid-cols-4
+    gap-4
+  "
+>
+  <div className="rounded-2xl bg-orange-50 p-4">
+    <div className="text-xs text-neutral-500 uppercase">
+      Duration
+    </div>
+
+    <div className="mt-1 font-semibold">
+      2 Months
+    </div>
+  </div>
+
+  <div className="rounded-2xl bg-orange-50 p-4">
+    <div className="text-xs text-neutral-500 uppercase">
+      Live Classes
+    </div>
+
+    <div className="mt-1 font-semibold">
+      1–1.5 Hrs Daily
+    </div>
+  </div>
+
+  <div className="rounded-2xl bg-orange-50 p-4">
+    <div className="text-xs text-neutral-500 uppercase">
+      Projects
+    </div>
+
+    <div className="mt-1 font-semibold">
+      5+ Real Projects
+    </div>
+  </div>
+
+  <div className="rounded-2xl bg-orange-50 p-4">
+    <div className="text-xs text-neutral-500 uppercase">
+      Schedule
+    </div>
+
+    <div className="mt-1 font-semibold">
+      6 Days / Week
+    </div>
+  </div>
+</div>
+
+{/* Benefits */}
+
+<div
+  className="
+    mt-8
+    flex
+    flex-wrap
+    gap-3
+    text-sm
+  "
+>
+  <span className="rounded-full bg-neutral-100 px-3 py-2">
+    Complete Notes
+  </span>
+
+  <span className="rounded-full bg-neutral-100 px-3 py-2">
+    Recorded Project Sessions
+  </span>
+
+  <span className="rounded-full bg-neutral-100 px-3 py-2">
+    Internship Preparation
+  </span>
+
+  <span className="rounded-full bg-neutral-100 px-3 py-2">
+    AI Integrated
+  </span>
+
+  <span className="rounded-full bg-neutral-100 px-3 py-2">
+    Certificate
+  </span>
+</div>
+
+{/* Pricing */}
+
+<div
+  className="
+    mt-8
+    flex
+    flex-wrap
+    items-center
+    gap-4
+  "
+>
+  <div className="text-neutral-400 line-through text-xl">
+    ₹3,500
+  </div>
+
+  <div className="text-4xl font-black text-orange-500">
+    ₹649
+  </div>
+
+  <div
+    className="
+      rounded-full
+      bg-green-100
+      px-3
+      py-1
+      text-sm
+      font-medium
+      text-green-700
+    "
+  >
+    Limited Time Offer
+  </div>
+</div>
+
+{/* Footer */}
+
+<div
+  className="
+    mt-10
+    flex
+    flex-col
+    md:flex-row
+    md:items-center
+    md:justify-between
+    gap-6
+  "
+>
                   <div
                     className="
                       flex

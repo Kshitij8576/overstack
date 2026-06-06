@@ -15,6 +15,10 @@ const navItems = [
     href: '/courses',
   },
   {
+    name: 'Services',
+    href: '/services',
+  },
+  {
     name: 'Community',
     href: '/community',
   },

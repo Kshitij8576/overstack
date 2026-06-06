@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, MessageCircle } from 'lucide-react'
-import Link from 'next/link'
 
-export default function CoursesCTA() {
+export default function ServicesCTA() {
   return (
     <section className="relative overflow-hidden bg-white py-16">
       {/* Glow */}
@@ -18,7 +17,6 @@ export default function CoursesCTA() {
           -translate-y-1/2
           w-[700px]
           h-[700px]
-
           rounded-full
           bg-orange-100
           blur-3xl
@@ -30,31 +28,26 @@ export default function CoursesCTA() {
         <motion.div
           initial={{
             opacity: 0,
-            y: 30,
+            y: 20,
           }}
           whileInView={{
             opacity: 1,
             y: 0,
           }}
           viewport={{ once: true }}
-          transition={{
-            duration: 0.6,
-          }}
           className="
             rounded-[40px]
             border
             border-neutral-200
             bg-white/80
             backdrop-blur-xl
-            px-8
-            py-20
-            md:px-16
-            md:py-24
+            p-10
+            md:p-16
             text-center
             shadow-[0_20px_80px_rgba(255,107,0,0.08)]
           "
         >
-          {/* Badge */}
+          {/* Label */}
 
           <div
             className="
@@ -71,7 +64,7 @@ export default function CoursesCTA() {
               text-orange-600
             "
           >
-            START YOUR JOURNEY
+            START A PROJECT
           </div>
 
           {/* Heading */}
@@ -86,10 +79,12 @@ export default function CoursesCTA() {
               leading-[0.95]
             "
           >
-            The future belongs
+            Have an idea?
             <br />
 
-            to people who build.
+            <span className="text-orange-500">
+              Let's build it.
+            </span>
           </h2>
 
           {/* Description */}
@@ -104,9 +99,10 @@ export default function CoursesCTA() {
               text-neutral-600
             "
           >
-            Learn modern skills, build real projects,
-            work with AI, and prepare for a future
-            where technology creates opportunity.
+            Whether it's a website, brand identity,
+            creative design, or AI-powered solution,
+            we're ready to turn your vision into
+            reality.
           </p>
 
           {/* Buttons */}
@@ -121,37 +117,9 @@ export default function CoursesCTA() {
               gap-4
             "
           >
-            <Link
-    href="/courses/#courses"
-              className="
-                group
-                inline-flex
-                items-center
-                justify-center
-                gap-3
-                px-8
-                py-4
-                rounded-2xl
-                bg-orange-500
-                text-white
-                font-semibold
-                transition-all
-                hover:scale-[1.02]
-                hover:bg-orange-600
-              "
-            >
-              Apply Now
+            {/* WhatsApp */}
 
-              <ArrowRight
-                size={18}
-                className="
-                  transition-transform
-                  group-hover:translate-x-1
-                "
-              />
-            </Link>
-
-             <a
+            <a
               href="https://wa.me/917355110417"
               target="_blank"
               rel="noopener noreferrer"
@@ -174,7 +142,7 @@ export default function CoursesCTA() {
             >
               <MessageCircle size={18} />
 
-              Talk To Us
+              Start a Project
 
               <ArrowRight
                 size={18}
@@ -183,6 +151,26 @@ export default function CoursesCTA() {
                   group-hover:translate-x-1
                 "
               />
+            </a>
+
+            {/* Services */}
+
+            <a
+              href="#top"
+              className="
+                px-8
+                py-4
+                rounded-2xl
+                border
+                border-neutral-200
+                bg-white
+                font-semibold
+                transition-all
+                hover:border-orange-300
+                hover:bg-orange-50
+              "
+            >
+              Explore Services
             </a>
           </div>
 
@@ -195,7 +183,7 @@ export default function CoursesCTA() {
               text-neutral-500
             "
           >
-            Live Learning • Real Projects • AI Integrated
+            Modern Design • Fast Delivery • Practical Pricing
           </div>
         </motion.div>
       </div>

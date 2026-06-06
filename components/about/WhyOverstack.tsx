@@ -19,7 +19,7 @@ const solutions = [
 
 export default function WhyOverstack() {
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] py-32">
+    <section className="relative overflow-hidden bg-[#fafafa] py-16">
       {/* Glow */}
 
       <div
